@@ -20,11 +20,15 @@ Cluster data, resulting from analysis, is also stored in volume snapshots. These
 [CloudMan][cm_web] buckets hold the configuration that brings all the components together, and are usually hosted on cloud object storage (S3, Swift or equivalent) There are two varieties: default/public (read-only), and cluster/private. Default buckets are used to bootstrap new clusters, which then create their own bucket to store configuration particular to them.
 
 Typical components present in a default bucket are:
+
 - `cm_boot.py`: a script to download and bootstrap [CloudMan][cm_web] from an accompanying `cm.tar.gz` tarball.
 - `cm.tar.gz`: a tarball containing the [CloudMan][cm_web] distribution to use for clusters started using this bucket.
 - `snaps.yaml`: a file containing details of snapshots that need to be mounted for types of clusters or different regions
 
-However, a cluster bucket usually contains `cm_boot.py` and `cm.tar.gz` as before, but also contains `persistent_data.yaml`, a file describing the cluster; and an empty file with the cluster name, with the filename in the form `<cluster name>.clusterName` (eg `myCluster.clusterName`).
+In contrast, a cluster bucket usually contains `cm_boot.py` and `cm.tar.gz` as before, but also contains:
+
+- `persistent_data.yaml`: a file describing the cluster
+- an empty file with the cluster name, with the filename in the form `<cluster name>.clusterName` (eg `myCluster.clusterName`).
 
 The cluster bucket name (in the form `cm-d52c2f263e5f47bb6cf7e709da9f0dea`) is related to the name of the cluster, allowing easy discovery for rebuilding a previously run cluster.
 
