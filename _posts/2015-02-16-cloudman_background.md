@@ -3,6 +3,7 @@ layout: page
 title: CloudMan Architecture
 ---
 ![CloudMan Architecture]({{ site.baseurl }}/images/cloudman-arch.jpg)
+
 Schematic of CloudMan Architecture, from [Afgan *et al* 2010][afgan2010].
 
 ## Launcher
