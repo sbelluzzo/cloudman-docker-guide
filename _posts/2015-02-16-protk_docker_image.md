@@ -41,6 +41,8 @@ To allow access to files mounted from host, we want the user id to match inside 
 
 ##Image Construction
 
+The Dockerfile for building this image is available in the [protk-dockerfile][protk-dockerfile] repository.
+
 ###Design Choices
 - Based off Debian stable for small size/stability
 - Current Dockerfile approach chosen for use of Automated Builds:
