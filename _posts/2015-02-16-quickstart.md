@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Quickstart
+title: Dockerized Galaxy on the Cloud Quickstart
 ---
+Currently the GVL images available on NeCTAR are incompatible with Docker; with the release of the GVL version 4 (now in beta), this should no longer be an issue and a default GVL instance should support running Dockerized tools. In the meantime, our custom Galaxy on the Cloud image and bucket can be used, as detailed below.
+
 Requirements:
 
 - Access to NeCTAR Australian Research Cloud (must be a member of an institution subscribing to the Australian Access Federation)
