@@ -14,7 +14,7 @@ can be found [here](http://simon.belluzzo.id.au/vlsci-intern-slides).
 ## Project Background
 Ira had previously written [ProtK](https://github.com/iracooke/protk), a unifying and convenience wrapper around a set of proteomics tools, along with a set of tool wrappers to allow use of the tools in [Galaxy](http://galaxyproject.org/).
 However, the complexity of installing the underlying tools and their dependencies, and ensuring interoperability with a Galaxy server, made installation by novice users difficult, especially in the context of [Galaxy on the Cloud](https://wiki.galaxyproject.org/CloudMan) or [Genomics Virtual Lab (GVL)](https://genome.edu.au/wiki/GVL) instances.
-Therefore, the primary goal of this work was to explore the feasibility of using [Docker](http://www.docker.com/), a lightweight "jail"/"container" platform that has preliminary support in Galaxy, as a way of easily distributing and installing the tools along with required dependencies. 
+Therefore, the primary goal of this work was to explore the feasibility of using [Docker](http://www.docker.com/), a lightweight "application container" platform that has preliminary support in Galaxy, as a way of easily distributing and installing the tools along with required dependencies.
 
 ## Project Aims
 - Build a ProtK proteomics Docker image.
