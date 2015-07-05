@@ -1,5 +1,5 @@
 ---
-title: About Project
+title: About the Project
 layout: page
 ---
 This work was the basis of a [VLSCI Summer Internship](http://vlsci.org.au/opportunities/internships)
